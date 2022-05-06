@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR"
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">                  
+    </head>                                         
+
+    <body>
+        <center>
+            <img src="img/entra21p.png">
+     <nav> 
+        <a href="index.html">Home</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contatos</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+        </center>
+
+    <br>    
+    <center>
+
+        <h1> Cadastro de dados </h1>
+<br>
+<br>
+          
+<corpo>
+    <form action="enviaemail.cs" method="post">
+
+
+        <!--primeira fila-->
+        <label> Nome: </label> 
+        <input type="texto">
+
+        <label> CPF: </label>
+        <input type="texto">
+
+        <label> RG: </label>
+        <input type="texto">
+
+          <br>
+          <br>
+          
+        <!--segunda fila-->
+        <label> E-mail: </label>
+        <input type="texto">
+
+        <label> Rua: </label>
+        <input type="texto">
+
+        <label> Nº: </label>
+        <input type="texto">
+     
+        <br>
+        <br>
+
+        <!--terceira fila-->    
+        <label> Bairro: </label>
+        <input type="texto">
+
+        <label> Cidade: </label>
+        <input type="texto">
+
+    <select name="Estado">
+
+        <option value="">Selecionar o Estado</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="PR">Paraná</option>
+        <option value="RS">Rio Grande do Sul</option>
+
+    </select>
+
+<br>
+<br>
+
+        <!-- quarta fila -->
+    <span>
+        Masculino <input type="radio" name="sexo" value="M">
+        Feminino <input type="radio" name="sexo" value="F">  
+        </span>
+<br>
+    <label><br>Nacionalidade</label>
+            <input type="checkbox" name="Nacionalidade" value="Brasileiro"> Brasileiro
+            <input type="checkbox" name="Nacionalidade" value="Outro"> Outro
+<br>
+<br>
+<!-- botões -->
+<input type="submit" name="enviar" value="enviar">
+
+<input type="reset" name="limpar" value="limpar">
+
+
+</center>
+    </body>
+        </form>
+            </html>
