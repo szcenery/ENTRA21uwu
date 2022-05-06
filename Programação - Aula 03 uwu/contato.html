@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>                    
+    
+</head>                                         
+<body>
+    <center>
+    <img src="img/entra21p.png">
+     <nav> 
+        <a href="index.html">Home</a>
+        <a href="empresa.html">Empresa</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html">Contatos</a>
+        <a href="cadastro.html">Cadastro</a>
+    </nav>
+    </center>
+    <br>
+    <!-- barra de pesquisa/link é o (GET) metodo menos seguro (POST) modo seguro-->
+
+    <form action="enviaemail.cs" method="post">
+        <label>Nome:</label>
+        <input type="text" Name="nome" placeholder="Informe seu nome">
+        
+        <label>E-mail:</label>
+        <input type="text" name="email">
+
+                <label>Estado:</label>
+        <select name="estado" >
+            <option value="">Selecione o estado</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </select>
+
+        <input type="date" name="data">
+
+        <label>Sexo:</label>
+        <span>
+            Masculino<input type="radio" name="sexo" value="M">
+            Feminino <input type="radio" name="sexo" value="F">
+        </span>
+
+        <label>Comidas:</label>
+        <input type="checkbox" name="comida" value="Lasanha">Lasanha
+        <input type="checkbox" name="comida" value="Pizza">Pizza
+        <input type="checkbox" name="comida" value="Pãoquente">Pãoquente
+        <input type="checkbox" name="comida" value="Hamburguers">Hamburguer
+
+        <label>Senha:</label>
+        <input type="password" name="senha">
+
+        <input type="submit" name="enviar" value="Enviar">
+
+        <button type="reset">Apagar</button>
+    </form>
+    <!-- (disable) para dessabilitar uma função -->
+    <!-- (readonly) apenas ler aquele valor ja setado -->
+        
+
+
+    </body>
+        </html>
