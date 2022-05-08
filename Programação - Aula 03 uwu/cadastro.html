@@ -27,48 +27,56 @@
 <br>
           
 <corpo>
-    <form action="enviaemail.cs" method="post">
+    <form action="bancodedados.cs" method="post" enctype="multipart/form-data">
 
 
         <!--primeira fila-->
         <label> Nome: </label> 
-        <input type="texto">
+        <input type="texto" name="Nome" value="Rafaela" placeholder="Ex.: Rafaela">
 
         <label> CPF: </label>
-        <input type="texto">
+        <input type="texto" name="CPF" placeholder="Ex.: 123.456.789.10" autocomplete="off" maxlength="11">
 
         <label> RG: </label>
-        <input type="texto">
+        <input type="texto" name="RG" placeholder="Ex.: 123456-78" autocomplete="option" maxlength="7">
 
           <br>
           <br>
           
         <!--segunda fila-->
         <label> E-mail: </label>
-        <input type="texto">
+        <input type="texto" name="E-mail" placeholder="Ex.: rafaela@hotmail.com">
 
         <label> Rua: </label>
-        <input type="texto">
+        <input type="texto" name="Rua" placeholder="Ex.: Rua Gustavo Sallinger">
 
         <label> Nº: </label>
-        <input type="texto">
+        <input type="texto" name="Nº" placeholder="Ex.: 45">
      
         <br>
         <br>
 
         <!--terceira fila-->    
         <label> Bairro: </label>
-        <input type="texto">
+        <input type="texto" name="Bairro" placeholder="Itoupava Seca">
 
+        <label> Estado: </label>
+        <select name="Estado">
+
+            <option value="">Selecionar Cidade</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande Do Sul</option>
+
+        </select>
+       
         <label> Cidade: </label>
-        <input type="texto">
+        <select name="Estado">
 
-    <select name="Estado">
-
-        <option value="">Selecionar o Estado</option>
-        <option value="SC">Santa Catarina</option>
-        <option value="PR">Paraná</option>
-        <option value="RS">Rio Grande do Sul</option>
+            <option value="">Selecionar Cidade</option>
+            <option value="BNU">Blumenau</option>
+            <option value="CRB">Curitiba</option>
+            <option value="PA">Porto Alegre</option>
 
     </select>
 
@@ -81,16 +89,30 @@
         Feminino <input type="radio" name="sexo" value="F">  
         </span>
 <br>
-    <label><br>Nacionalidade</label>
-            <input type="checkbox" name="Nacionalidade" value="Brasileiro"> Brasileiro
-            <input type="checkbox" name="Nacionalidade" value="Outro"> Outro
+    <label>Nacionalidade</label>
+    
+        <input type="checkbox" name="Nacionalidade" value="Brasileiro" checked> Brasileiro
+        <input type="checkbox" name="Nacionalidade" value="Outro"> Outro
+
 <br>
 <br>
-<!-- botões -->
-<input type="submit" name="enviar" value="enviar">
+        
+    <label>Foto</label>
+        
+        <input type="file" name="foto" multiple>
 
-<input type="reset" name="limpar" value="limpar">
+        <!-- botões para enviar ou apagar a foto -->
+        <input type="submit" name="enviar" value="Enviar">
+        <button type="reset">Apagar</button>
 
+<br>
+   <br>    
+        <label>Texto:</label>
+        <!-- usar 'required' para tornar o campo obrigatório -->
+        <textarea name="texto" required></textarea> 
+        <!-- botões para enviar ou apagar o texto -->
+        <input type="submit" name="enviar" value="enviar">
+        <input type="reset" name="limpar" value="limpar">
 
 </center>
     </body>
