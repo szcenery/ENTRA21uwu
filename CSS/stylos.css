@@ -1,0 +1,31 @@
+/* fórmula:
+
+seletor{
+    propriedade: valor;
+    
+}*/
+
+/* CSS INLINE <- dentro de um elemento em forma de atributo  
+CSS EXTERNO <- O MAIS USADO E TAMBÉM O MAIS CORRETO; outro arquivo que vai ser linkado 
+html
+CSS NO CÓDIGO <- dentro do arquivo HTML */
+
+html, body{
+    /* margem */
+    margin: 0; 
+    /* preenchimento */
+    padding: 0;
+
+}
+nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 136px;
+    background: #3a1608;
+}
+img.segundaFoto{
+    float: left;
+    width: 140px;
+}
