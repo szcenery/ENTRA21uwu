@@ -10,22 +10,86 @@ CSS EXTERNO <- O MAIS USADO E TAMBÉM O MAIS CORRETO; outro arquivo que vai ser 
 html
 CSS NO CÓDIGO <- dentro do arquivo HTML */
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
 html, body{
     /* margem */
-    margin: 0; 
+    margin: 30; 
     /* preenchimento */
-    padding: 0;
-
-}
-nav{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 136px;
-    background: #3a1608;
+    padding: 12;
 }
 img.segundaFoto{
     float: left;
     width: 140px;
+}
+/* asterístico = coringa */
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+/* configuração navegação */
+nav a{
+    background-position: left;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 136px;
+    background: rgb(115, 230, 214);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 300;
+    font-size: larger; 
+    font-style: italic;
+    text-decoration: none;
+}
+/* regras dos conteúdos */
+main{
+    padding: 80px, 20px;
+}
+
+.homeArticle{
+    width: 47%;
+    background: #420f3a;
+    margin: 100px 2%;
+    border-radius: 100px;
+    /* top, bottom, left, right  */
+    box-shadow: 0px 4px 44px 4px rgba(13, 34, 3, 0.95);
+    padding: 15px;
+    display: inline-block;
+    /* site: border radius generator */
+}
+.homeArticle img{
+    float: left;
+    margin-right: 10px;
+    border: 1px dotted #dd66cb;
+    border-radius: 15;
+}
+.homeArticle h2{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(167, 92, 0);
+}
+.homeArticle p{
+    font-style: italic;
+    text-indent: 20px;
+}
+.homeArticle a{
+    display: block;
+    width: auto;
+    padding: 4px;
+    background: rgb(56, 4, 104);
+    color: #fff
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    transition:
+    0.15s padding ease-out,
+    0.15s border-radius ease-out
+}
+.homeArticle a:hover{
+    box-shadow: rgb(10, 77, 1);
+    padding: 6px;
+    border-radius: 15;
+    transition: 
+    0.15s padding ease-out,
+    0.15s border-radius ease-out;
 }
