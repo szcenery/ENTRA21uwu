@@ -15,9 +15,9 @@ CSS NO CÓDIGO <- dentro do arquivo HTML */
 
 html, body{
     /* margem */
-    margin: 30; 
+    margin: 0; 
     /* preenchimento */
-    padding: 12;
+    padding: 0;
 }
 img.segundaFoto{
     float: left;
@@ -28,68 +28,100 @@ img.segundaFoto{
     font-family: 'Work Sans', sans-serif;
 }
 /* configuração navegação */
+
 nav a{
-    background-position: left;
+    background-position: 0%;
     left: 0;
     top: 0;
     width: 100%;
     height: 136px;
-    background: rgb(115, 230, 214);
+    background: rgb(255, 255, 255);
     font-family: 'Rajdhani', sans-serif;
     font-weight: 300;
     font-size: larger; 
     font-style: italic;
     text-decoration: none;
 }
-/* regras dos conteúdos */
+
+/* regras dos conteúdos
 main{
     padding: 80px, 20px;
-}
+} */
 
 .homeArticle{
-    width: 47%;
+    width: 30%;
     background: #420f3a;
-    margin: 100px 2%;
     border-radius: 100px;
     /* top, bottom, left, right  */
     box-shadow: 0px 4px 44px 4px rgba(13, 34, 3, 0.95);
     padding: 15px;
     display: inline-block;
+    min-height: 170px;
+    padding-top: 100px;
     /* site: border radius generator */
 }
+
 .homeArticle img{
     float: left;
     margin-right: 10px;
-    border: 1px dotted #dd66cb;
+    border: 1px dotted #000000;
     border-radius: 15;
 }
 .homeArticle h2{
     font-size: 14px;
     text-transform: uppercase;
-    color: rgb(167, 92, 0);
+    color: rgb(255, 255, 255);
 }
 .homeArticle p{
     font-style: italic;
     text-indent: 20px;
+    color:#fff;
 }
 .homeArticle a{
+    width: 100px; 
     display: block;
-    width: auto;
+    position:relative;
+    float:right;
+    left: 0;
+    text-align: center;
     padding: 4px;
     background: rgb(56, 4, 104);
-    color: #fff
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    float: right;
-    transition:
-    0.15s padding ease-out,
-    0.15s border-radius ease-out
 }
 .homeArticle a:hover{
     box-shadow: rgb(10, 77, 1);
     padding: 6px;
     border-radius: 15;
-    transition: 
-    0.15s padding ease-out,
-    0.15s border-radius ease-out;
 }
+
+.carousel li{
+    list-style: none;
+    display: inline-block;
+    box-shadow: 0px 4px 44px 4px rgba(74, 1, 36, 0.95);
+    padding: 4px;
+}
+.carousel {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 4px 44px 4px rgba(74, 1, 36, 0.95);
+    background: rgba(255, 0, 140, 0.484);
+}
+footer span{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: #420f3a;
+}
+.homeArticle.active{
+    background: ;
+}
+/* estilos de carousel
+.carousel{
+    width: 100%;
+    background: rgba(255, 0, 140, 0.484); //apagar;
+} */
